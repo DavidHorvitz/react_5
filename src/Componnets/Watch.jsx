@@ -1,4 +1,5 @@
 import React from "react";
+import '../watch.css';
 
 function Watch(props) {
     const date = new Date(props.milliseconds);
@@ -7,7 +8,7 @@ function Watch(props) {
 
     const time = date.toLocaleDateString('he-IL', options)
     return(
-        <div>{time}</div>
+        <span id="timeB">{time}</span>
     )
 
 }
