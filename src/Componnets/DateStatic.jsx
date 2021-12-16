@@ -1,5 +1,5 @@
 import React from "react";
-import Watch from "./Watch";
+import Watch from "../Display_Components/Watch";
 
 function DateStatic(){
     const date = new Date().toString();

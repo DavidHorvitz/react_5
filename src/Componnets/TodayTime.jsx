@@ -1,5 +1,5 @@
 import React ,{useState} from "react";
-import Watch from "./Watch";
+import Watch from "../Display_Components/Watch";
 
 function TodayTime(){
     const [time ,setTime] = useState(Date.now());
