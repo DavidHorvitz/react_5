@@ -3,6 +3,7 @@ import './App.css';
 import TodayTime from './Componnets/TodayTime';
 import DateStatic from './Componnets/DateStatic';
 import Tableprop from './Componnets/Tableprop';
+import InputViewer from './Componnets/InputViewer';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <DateStatic/>
       
     <Tableprop/>
+  <InputViewer/>
       </header>
     </div>
   );
