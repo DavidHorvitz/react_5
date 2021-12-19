@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react';
 import Input from '../Display_Components/Input';
+import Button from '../Display_Components/Button';
 
 function InputViewer() {
     const [text, setText] = useState('');
@@ -11,11 +12,15 @@ function InputViewer() {
     function clickHandler(e) {
         setViewText(text);
     };
+    function clearHandler(e) {
+        setViewText();
+    }
     return (
         <div>
-            <span>{viewText}</span>
-            <input onChange={changeHandler} type="text" />
-            <button onClick={clickHandler}>Click me</button>
+            <div>{viewText}</div>
+            <Input onChange={changeHandler} type="text" />
+            <Button onClick={clickHandler}>Click me</Button>
+            <button onClick={clearHandler}>Clear div</button>
         </div>
     );
 }
